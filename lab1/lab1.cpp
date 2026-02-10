@@ -188,7 +188,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
     AdjustWindowRect(&rc, WS_OVERLAPPEDWINDOW, FALSE);
 
     HWND hWnd = CreateWindow(
-        L"MinimalDX11Class", L"Тишковец Сергей – ДЗ 1",
+        L"MinimalDX11Class", L"Г’ГЁГёГЄГ®ГўГҐГ¶ Г‘ГҐГ°ГЈГҐГ© вЂ“ Г„Г‡ 1",
         WS_OVERLAPPEDWINDOW,
         CW_USEDEFAULT, CW_USEDEFAULT,
         rc.right - rc.left, rc.bottom - rc.top,
@@ -218,4 +218,5 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
     delete g_renderer;
 
     return (int)msg.wParam;
+
 }
