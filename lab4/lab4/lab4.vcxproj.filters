@@ -39,4 +39,19 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="bmw.dds" />
+    <Image Include="nx.dds" />
+    <Image Include="ny.dds" />
+    <Image Include="nz.dds" />
+    <Image Include="px.dds" />
+    <Image Include="py.dds" />
+    <Image Include="pz.dds" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleTexture.ps" />
+    <None Include="SimpleTexture.vs" />
+    <None Include="SphereTexture.ps" />
+    <None Include="SphereTexture.vs" />
+  </ItemGroup>
 </Project>

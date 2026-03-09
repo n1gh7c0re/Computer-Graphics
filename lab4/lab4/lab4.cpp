@@ -153,6 +153,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
         SetCurrentDirectory(dir.c_str());
     }
 
+
     // Perform application initialization:
     if (!InitInstance(hInstance, nCmdShow))
     {
