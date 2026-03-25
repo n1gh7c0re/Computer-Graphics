@@ -1279,11 +1279,11 @@ HRESULT InitScene()
         assert(SUCCEEDED(result));
     }
 
-    if (SUCCEEDED(result))
-    {
-        result = InitCubemap();
-        assert(SUCCEEDED(result));
-    }
+    //if (SUCCEEDED(result))
+    //{
+    //    result = InitCubemap();
+    //    assert(SUCCEEDED(result));
+    //}
 
     if (SUCCEEDED(result))
     {
