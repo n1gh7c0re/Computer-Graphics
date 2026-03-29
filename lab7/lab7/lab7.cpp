@@ -558,7 +558,7 @@ HRESULT SetupBackBuffer()
         result = g_pd3dDevice->CreateDepthStencilView(m_pDepthBuffer, nullptr, &m_pDepthBufferDSV);
         if (SUCCEEDED(result))
         {
-            result = SetResourceName(m_pDepthBuffer, "DepthBufferView");
+            result = SetResourceName(m_pDepthBufferDSV, "DepthBufferView");
         }
     }
 
