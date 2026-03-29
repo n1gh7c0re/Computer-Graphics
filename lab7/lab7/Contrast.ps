@@ -1,0 +1,10 @@
+Texture2D texture0 : register(t0);
+SamplerState sampler0 : register(s0);
+
+float4 ps(float4 pos : SV_POSITION, float2 uv : TEXCOORD) : SV_TARGET
+{
+    float4 color = texture0.Sample(sampler0, uv);
+    float contrast = 1.5; 
+    color.rgb = ((color.rgb - 0.5) * contrast) + 0.5;
+    return saturate(color);
+}
