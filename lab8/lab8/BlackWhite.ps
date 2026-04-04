@@ -1,0 +1,9 @@
+Texture2D texture0 : register(t0);
+SamplerState sampler0 : register(s0);
+
+float4 ps(float4 pos : SV_POSITION, float2 uv : TEXCOORD) : SV_TARGET
+{
+    float4 color = texture0.Sample(sampler0, uv);
+    float luminance = dot(color.rgb, float3(0.299, 0.587, 0.114));
+    return float4(luminance.xxx, color.a);
+}
